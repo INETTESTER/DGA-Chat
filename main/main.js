@@ -12,10 +12,12 @@ import { get_contacts } from '../api/get_contacts.js';
 import { get_groups } from '../api/get_groups.js';
 import { send_message } from '../api/send_message.js';
 import { send_file } from '../api/send_file.js';
+import { websocket } from '../api/websocket.js';
 
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
+  response = websocket()
   //response = get_centrifugo_token()
   //response = account()
   //response = me_profile()

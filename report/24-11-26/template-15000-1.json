@@ -1,0 +1,21 @@
+{
+    "metrics": {
+        "vus_max": {
+            "value": 2596,
+            "min": 1299,
+            "max": 2596
+        },
+        "vus": {
+            "min": 0,
+            "max": 0,
+            "value": 0
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

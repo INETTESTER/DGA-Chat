@@ -55,7 +55,7 @@ else if (scenariox === 3) {
                 executor: 'constant-arrival-rate',
                 rate: user,
                 timeUnit: `${durationx}s`,
-                preAllocatedVUs: user,
+                preAllocatedVUs: Math.min(user, 10000),
                 duration: `${durationx}s`,
                 gracefulStop: '120s',
             },

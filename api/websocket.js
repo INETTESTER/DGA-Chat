@@ -3,7 +3,7 @@ import ws from 'k6/ws';
 import { domain, token } from './env.js';
 
 export function websocket() {
-  const url = `wss://chat.workd.go.th/centrifugo/connection/websocket`;
+  const url = `wss://chat.inet.co.th/centrifugo/connection/websocket`;
 
   const params = {
     headers: {
@@ -42,7 +42,7 @@ export function websocket() {
     // }, 10000);
   });
 
-  //console.log(`WebSocket Status: ${response && response.status}`);
+  console.log(`WebSocket Status: ${response && response.status}`);
 
   return response;
 }

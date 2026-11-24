@@ -30,7 +30,7 @@ export default function () {    //เรียกใช้ API ใน export def
 
 
   
-  //response_check(response);
+  response_check(response);
   error_check(response);
   sleep(1)
 }

@@ -42,7 +42,7 @@ export function websocket() {
     // }, 10000);
   });
 
-  console.log(`WebSocket Status: ${response && response.status}`);
+  //console.log(`WebSocket Status: ${response && response.status}`);
 
   return response;
 }

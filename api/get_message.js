@@ -9,7 +9,7 @@ export function get_message() {
     'Authorization': `Bearer ${token}`,
   };
 
-  const response = http.post(url, payload, {
+  const response = http.get(url, {
     headers: headers,
     timeout: '3m',
   });

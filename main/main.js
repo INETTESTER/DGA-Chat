@@ -18,9 +18,9 @@ import { get_message } from '../api/get_message.js';
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  response = send_message()
+  //response = send_message()
   //response = get_listchat()
-  //response = get_message()
+  response = get_message()
 
 
   //response = websocket()
@@ -36,7 +36,7 @@ export default function () {    //เรียกใช้ API ใน export def
 
 
   
-  //response_check(response);
+  response_check(response);
   error_check(response);
   sleep(1)
 }

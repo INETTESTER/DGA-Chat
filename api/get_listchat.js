@@ -9,7 +9,10 @@ export function get_listchat() {
     'Authorization': `Bearer ${token}`,
   };
 
-  const response = http.get(url, { headers });
+  const response = http.post(url, payload, {
+    headers: headers,
+    timeout: '3m',
+  });
 
   //console.log(response.body);
 

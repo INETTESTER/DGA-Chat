@@ -13,9 +13,13 @@ export function send_message() {
   const headers = {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${token}`,
+    timeout: '3m'
   };
 
-  const response = http.post(url, payload, { headers });
+  const response = http.post(url, payload, {
+    headers: headers,
+    timeout: '3m',
+  });
 
   //console.log(response.body);
 

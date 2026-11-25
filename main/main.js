@@ -18,8 +18,8 @@ import { get_message } from '../api/get_message.js';
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  //response = send_message()
-  response = get_listchat()
+  response = send_message()
+  //response = get_listchat()
   //response = get_message()
 
 

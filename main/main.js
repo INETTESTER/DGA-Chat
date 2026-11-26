@@ -14,11 +14,13 @@ import { send_message } from '../api/send_message.js';
 import { send_file } from '../api/send_file.js';
 import { websocket } from '../api/websocket.js';
 import { get_message } from '../api/get_message.js';
+import { chat_home } from '../api/chat_home.js';
 
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  response = send_message()
+  response = chat_home()
+  //response = send_message()
   //response = get_listchat()
   //response = get_message()
 
